@@ -1,6 +1,9 @@
 const CustomService = require('./services/wdio-custom-service');
 
 exports.config = {
+    runnerEnv: {
+        LOCALE: process.env.LOCALE
+    },
     //
     // ====================
     // Runner Configuration
